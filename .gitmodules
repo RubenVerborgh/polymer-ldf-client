@@ -1,0 +1,21 @@
+[submodule "webcomponentsjs"]
+	path = webcomponentsjs
+	url = git@github.com:webcomponents/webcomponentsjs.git
+[submodule "core-component-page"]
+	path = core-component-page
+	url = git@github.com:Polymer/core-component-page.git
+[submodule "polymer"]
+	path = polymer
+	url = git@github.com:Polymer/polymer.git
+[submodule "NodeBind"]
+	path = NodeBind
+	url = https://github.com/polymer/NodeBind
+[submodule "observe-js"]
+	path = observe-js
+	url = https://github.com/polymer/observe-js
+[submodule "URL"]
+	path = URL
+	url = https://github.com/websanova/js-url
+[submodule "TemplateBinding"]
+	path = TemplateBinding
+	url = git@github.com:Polymer/TemplateBinding.git
