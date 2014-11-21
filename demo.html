@@ -21,15 +21,12 @@
 
   <p>An example of using <code>&lt;polymer-ldf-client&gt;</code></p>
 
-  <polymer-ldf-client query="
-    SELECT DISTINCT ?frag WHERE {
-      ?a a &lt;http://advene.org/ns/cinelab/ld#Annotation&gt; ;
-        &lt;http://advene.org/ns/cinelab/ld#hasFragment&gt; ?frag ;
-        &lt;http://advene.org/ns/cinelab/ld#taggedWith&gt;
-          [ &lt;http://purl.org/dc/elements/1.1/title&gt; 'personnages: Margaret'],
-          [ &lt;http://purl.org/dc/elements/1.1/title&gt; 'personnages: Grand Papa Pollitt'];
-        .
-    }" start-fragment="http://spectacleenlignes.fr/ldf/spectacle_en_lignes">
+  <polymer-ldf-client query='
+    SELECT ?p ?c WHERE {
+      ?p a <http://dbpedia.org/ontology/Artist>.
+      ?p <http://dbpedia.org/ontology/birthPlace> ?c.
+      ?c <http://www.w3.org/2000/01/rdf-schema#label> "York"@en.
+    }' start-fragment="http://data.linkeddatafragments.org/dbpedia">
   </polymer-ldf-client>
 
   <script>
