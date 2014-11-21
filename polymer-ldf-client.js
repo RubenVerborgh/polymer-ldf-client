@@ -1,3 +1,5 @@
+ldf.Logger.setLevel('warning');
+
 Polymer({
   ready: function() {
     this.executeQuery();
